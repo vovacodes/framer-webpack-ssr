@@ -1,0 +1,30 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:ssr": "webpack -c webpack.ssr.config.js",
+    "run:ssr": "node dist-ssr/main.cjs",
+    "watch": "webpack -w",
+    "serve": "deno run --allow-net --allow-read https://deno.land/std@0.100.0/http/file_server.ts"
+  },
+  "keywords": [],
+  "type": "module",
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "follow-redirects": "^1.14.1",
+    "prettier": "^2.3.0",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "framer": "^1.2.31-alpha.2",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
