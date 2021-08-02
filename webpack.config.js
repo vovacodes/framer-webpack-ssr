@@ -7,7 +7,6 @@ export default {
   output: {
     filename: "main.js",
     path: fileURLToPath(new URL("./dist", import.meta.url).href),
-    publicPath: fileURLToPath(new URL("./dist", import.meta.url).href),
   },
   mode: "development",
   plugins: [new EsmUrlPlugin()],
